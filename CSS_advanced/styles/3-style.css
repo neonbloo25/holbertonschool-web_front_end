@@ -8,29 +8,29 @@
     --text-color: var(--color-black);
   }
   
-  /* === Effortless Transitions === */
-  html {
+/* === Effortless Transitions === */
+html {
     scroll-behavior: smooth;
   }
   
-  /* === Do You Know Your Color Values === */
-  body {
+/* === Do You Know Your Color Values === */
+body {
     color: var(--text-color);
   }
   
-  a {
+a {
     color: var(--text-color);
   }
   
-  .visually-hidden {
+.visually-hidden {
     display: none;
   }
   
-  .card-category {
+.card-category {
     color: var(--color-primary);
   }
   
-  .section-tagline {
+.section-tagline {
     color: var(--color-primary);
   }
   
