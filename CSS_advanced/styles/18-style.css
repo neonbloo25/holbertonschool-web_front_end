@@ -66,6 +66,7 @@
 nav {
   margin: 0; /* Remove all margins */
   padding: 0; /* Remove all padding */
+  list-style: none; /* Remove list styling */
   text-align: center; /* Center align text */
 }
 
