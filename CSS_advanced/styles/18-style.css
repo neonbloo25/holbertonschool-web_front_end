@@ -98,7 +98,7 @@ nav ul {
   text-align: center; /* Center align the text */
 }
 
-.nav-item {
+.nav .nav-item {
   font-family: var(--nav-item-font-family); /* Apply custom font family */
   font-weight: var(--nav-item-font-weight); /* Apply custom font weight */
   font-size: var(--nav-item-font-size); /* Apply custom font size */
@@ -107,7 +107,7 @@ nav ul {
   margin: var(--nav-item-margin); /* Set margin around nav-item */
 }
 
-.nav-link {
+.nav .nav-link {
   display: block; /* Make the nav link a block element */
   padding: calc(0.5 * 1rem) calc(1 * 1rem); /* Top & Bottom padding = 0.5rem, Left & Right padding = 1rem */
 }
