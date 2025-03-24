@@ -67,6 +67,7 @@
   text-align: var(--section-footer-align); /* Align footer content */
 }
 
-footer {
-  padding: var(--footer-padding); /* Padding for footer */
+/* === Footer Class Specific Padding === */
+.footer {
+  padding: var(--footer-padding); /* Padding for footer class */
 }
