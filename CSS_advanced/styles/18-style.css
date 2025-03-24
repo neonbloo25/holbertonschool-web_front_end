@@ -49,42 +49,67 @@
   --nav-item-font-family: var(--font-family-title);
   --nav-item-font-weight: var(--font-weight-bold);
   --nav-item-font-size: var(--font-size-medium);
-  --nav-item-letter-spacing: 4%;
+  --nav-item-letter-spacing: 4%; /* 4% of root element */
   --nav-item-display: inline-block;
-  --nav-item-margin: 0 0 0 0;
+  --nav-item-margin: 3rem 0 0 0; /* 3 times root element on the bottom */
   --nav-item-link-hover: var(--color-primary);
 }
 
-/* === Navbar Styling === */
+/* === Integrating Google Fonts === */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
 
-/* Targeting the navbar-menu class */
+/* === Section Padding === */
+.section {
+  padding: var(--section-padding); /* Apply general padding to all sections */
+}
+
+.section-header {
+  padding: var(--section-header-padding); /* Padding for section header */
+}
+
+.section-body {
+  padding: var(--section-body-padding); /* Padding for section body */
+}
+
+.section-footer {
+  padding: var(--section-footer-padding); /* Padding for section footer */
+  text-align: var(--section-footer-align); /* Align footer content */
+}
+
+/* === Footer Class Specific Padding === */
+.footer {
+  padding: var(--footer-padding); /* Padding for footer class */
+}
+
+/* === Navbar Customization === */
 .navbar-menu {
-  float: right; /* Float the menu to the right */
+  float: right; /* Float the navbar menu to the right */
 }
 
-/* For the nav class */
 nav {
-  margin: 0; /* Remove all margins */
-  padding: 0; /* Remove all padding */
-  text-align: center; /* Center align text */
+  margin: 0; /* Remove margin from all sides */
+  padding: 0; /* Remove padding from all sides */
 }
 
-/* For the nav-item class inside nav */
-nav .nav-item {
-  font-family: var(--nav-item-font-family);
-  font-weight: var(--nav-item-font-weight);
-  font-size: var(--nav-item-font-size);
-  letter-spacing: var(--nav-item-letter-spacing);
-  display: var(--nav-item-display);
-  margin: var(--nav-item-margin);
+nav ul {
+  list-style: none; /* Remove any list styling */
+  text-align: center; /* Center align the text */
 }
 
-/* For the nav-link class inside nav */
-nav .nav-link {
-  display: block;
-  padding: 50% 1rem; /* Top and bottom padding is half of root element, left and right are 1rem */
+.nav-item {
+  font-family: var(--nav-item-font-family); /* Apply custom font family */
+  font-weight: var(--nav-item-font-weight); /* Apply custom font weight */
+  font-size: var(--nav-item-font-size); /* Apply custom font size */
+  letter-spacing: var(--nav-item-letter-spacing); /* Apply custom letter-spacing */
+  display: var(--nav-item-display); /* Set display to inline-block */
+  margin: var(--nav-item-margin); /* Set margin around nav-item */
+}
+
+.nav-link {
+  display: block; /* Make the nav link a block element */
+  padding: calc(0.5 * 1rem) calc(1 * 1rem); /* Top & Bottom padding = 0.5rem, Left & Right padding = 1rem */
 }
 
 nav .nav-link:hover {
-  color: var(--nav-item-link-hover); /* Change foreground color on hover */
+  color: var(--nav-item-link-hover); /* Change foreground color to primary on hover */
 }
