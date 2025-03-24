@@ -1,0 +1,165 @@
+/* === Universal Box Sizing === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* === Normalize CSS === */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/* === Custom Properties === */
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+  
+  /* Font Family Variables */
+  --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+  /* Font Size Variables */
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 4.8rem;
+
+  /* Font Weight Variables */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  
+  /* Line Height Variables */
+  --line-height-small: 1.2;
+  --line-height-base: 1.5;
+  --line-height-big: 1.8;
+  
+  /* New Custom Property for Centering Section Titles */
+  --section-header-align: center;
+  
+  /* Custom Property for Section Tagline Text Transform */
+  --section-tagline-transform: uppercase;
+  
+  /* New Custom Properties for Section Title */
+  --section-title-margin: 0;
+  --section-title-color: var(--color-black);
+  
+  /* Padding Properties */
+  --section-padding: 5rem 0;
+  --section-header-padding: 0 0 3rem;
+  --section-body-padding: 0 0 3rem;
+  --section-footer-padding: 3rem 0 0;
+  --section-footer-align: center;
+  --footer-padding: 5rem 0 1rem;
+}
+
+/* === Integrating Google Fonts === */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/* === Effortless Transitions === */
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; /* Set base font size to 62.5% of normal size */
+}
+
+/* === Do You Know Your Color Values === */
+body {
+  color: var(--text-color);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-medium); /* Set body font size */
+  font-weight: var(--font-weight-regular); /* Set font-weight to regular */
+  line-height: var(--line-height-base); /* Set line-height to base */
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none; /* Remove default text decoration */
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.card-category {
+  color: var(--color-primary);
+}
+
+.section-tagline {
+  color: var(--color-primary);
+  font-family: var(--font-family-title); /* Set font-family to title font */
+  font-weight: var(--font-weight-bold); /* Set font-weight to bold */
+  text-transform: var(--section-tagline-transform); /* Apply uppercase transformation */
+}
+
+/* === New Section Header Alignment === */
+.section-header {
+  text-align: var(--section-header-align); /* Center align section titles */
+}
+
+/* === Section Title Styling === */
+.section-title {
+  font-family: var(--font-family-title); /* Set font-family to title font */
+  font-size: var(--font-size-xx-large); /* Set font-size to xx-large */
+  font-weight: var(--font-weight-bold); /* Set font-weight to bold */
+  margin: var(--section-title-margin); /* Set margin using custom property */
+  color: var(--section-title-color); /* Set text color using custom property */
+}
+
+/* === Variables for Storing Certain Font Types === */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-bold); /* Set font-weight to bold for headings */
+}
+
+/* === Pseudo Classes for Anchor Elements === */
+a:link {
+  color: var(--text-color); /* Target links before they are visited */
+  text-decoration: none; /* Remove default text decoration */
+}
+
+/* Target the visited state */
+a:visited {
+  font-style: italic; /* Italicize visited links */
+}
+
+/* Target the hover state */
+a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Target the active state */
+a:active {
+  background-color: var(--color-light-grey); /* Set background color for active state */
+}
+
+/* === Styling the Container === */
+.container {
+  width: 960px; /* Set container width to 960px */
+  margin-left: auto; /* Automatically distribute space on the left */
+  margin-right: auto; /* Automatically distribute space on the right */
+}
+
+/* === Adding Padding to Sections === */
+.section {
+  padding: var(--section-padding); /* Apply padding to all sides of the section */
+}
+
+.section-header {
+  padding: var(--section-header-padding); /* Apply padding to the section-header */
+}
+
+.section-body {
+  padding: var(--section-body-padding); /* Apply padding to the section-body */
+}
+
+.section-footer {
+  padding: var(--section-footer-padding); /* Apply padding to the section-footer */
+  text-align: var(--section-footer-align); /* Center align the section-footer */
+}
+
+footer {
+  padding: var(--footer-padding); /* Apply padding to all sides of the footer */
+}
