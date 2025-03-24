@@ -97,8 +97,8 @@
   }
   
   /* === Pseudo Classes for Anchor Elements === */
-  a {
-    color: var(--text-color);
+  a:link {
+    color: var(--text-color); /* Target links before they are visited */
     text-decoration: none; /* Remove default text decoration */
   }
   
