@@ -86,9 +86,11 @@
   float: right; /* Float the navbar menu to the right */
 }
 
-nav {
-  margin: 0; /* Remove margin from all sides */
-  padding: 0; /* Remove padding from all sides */
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
 }
 
 nav ul {
