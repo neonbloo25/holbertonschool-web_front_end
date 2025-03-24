@@ -109,7 +109,7 @@ nav ul {
 
 .nav .nav-link {
   display: block; /* Make the nav link a block element */
-  padding: calc(0.5 * 1rem) calc(1 * 1rem); /* Top & Bottom padding = 0.5rem, Left & Right padding = 1rem */
+  ppadding: 0.5rem 0;
 }
 
 nav .nav-link:hover {
