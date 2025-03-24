@@ -93,7 +93,7 @@
     text-align: center;
 }
 
-nav ul {
+.nav ul {
   list-style: none; /* Remove any list styling */
   text-align: center; /* Center align the text */
 }
@@ -109,9 +109,10 @@ nav ul {
 
 .nav .nav-link {
   display: block; /* Make the nav link a block element */
-  padding: 0.5rem 0;
+  padding-top: 0.5rem; /* Half of the root element font size */
+  padding-bottom: 0.5rem; /* Half of the root element font size */
 }
 
-nav .nav-link:hover {
+.nav .nav-link:hover {
   color: var(--nav-item-link-hover); /* Change foreground color to primary on hover */
 }
