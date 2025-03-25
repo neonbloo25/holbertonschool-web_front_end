@@ -102,7 +102,7 @@
   font-family: var(--nav-item-font-family); /* Apply custom font family */
   font-weight: var(--nav-item-font-weight); /* Apply custom font weight */
   font-size: var(--nav-item-font-size); /* Apply custom font size */
-  letter-spacing: calc(0.04 * 1rem); /* 4% of 1rem */
+  letter-spacing: var(--nav-item-letter-spacing); /* Apply custom letter-spacing */
   display: var(--nav-item-display); /* Set display to inline-block */
   margin: var(--nav-item-margin); /* Set margin around nav-item */
 }
