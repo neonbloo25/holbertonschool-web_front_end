@@ -88,8 +88,7 @@
 
 .nav {
     margin: 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
     padding-top: 0.5rem; /* Half of the root element font size */
     padding-bottom: 0.5rem; /* Half of the root element font size */
     list-style: none;
