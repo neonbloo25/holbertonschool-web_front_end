@@ -82,7 +82,6 @@
 /* === Footer Class Specific Padding === */
 .footer {
   padding: var(--footer-padding);
-  text-align: right;
 }
 
 /* === Navbar Customization === */
