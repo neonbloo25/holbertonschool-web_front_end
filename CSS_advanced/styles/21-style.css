@@ -137,6 +137,12 @@ ul.row {
   padding: 0.5rem;
 }
 
+.col-1-3,
+.col-1-2 {
+  float: unset;
+  padding: initial;
+}
+
 /* === Footer Copyright Styling === */
 .footer-copyright {
   margin: 0;
