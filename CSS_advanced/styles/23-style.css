@@ -177,10 +177,13 @@ ul.row {
 
 /* === Social Link Styling === */
 .social-link svg {
-    display: block;
     fill: var(--text-color);
 }
 
 .social-link {
     display: block;
+}
+
+.social-link > svg {
+    fill: var(--text-color);
 }
