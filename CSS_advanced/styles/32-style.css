@@ -242,3 +242,7 @@ ul.row {
 .card-work:hover .card-inner {
   transition: all var(--transition-duration) var(--transition-cubic-bezier);
 }
+
+.card-work .card-inner {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+  }
