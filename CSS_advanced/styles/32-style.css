@@ -228,7 +228,7 @@ ul.row {
 
 /* Transitions for Navigation Items */
 .nav .nav-link::before {
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 /* Transitions for Buttons */
@@ -240,5 +240,5 @@ ul.row {
 /* Transitions for Card Works on Hover */
 
 .card-work:hover .card-inner {
-  transition: var(--transition-duration) var(--transition-cubic-bezier);
+  transition: all var(--transition-duration) var(--transition-cubic-bezier);
 }
