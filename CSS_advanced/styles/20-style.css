@@ -158,7 +158,7 @@ ul.row {
 
 /* === Clear Context of the Grid === */
 .row::after {
-    content: none;
+    content: "";
     display: table;
     clear: both;
   }  
