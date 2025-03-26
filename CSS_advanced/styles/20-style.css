@@ -157,8 +157,8 @@ ul.row {
 }
 
 /* === Clear Context of the Grid === */
-.row + .row {
-  content: "";
-  display: table;
-  clear: both;
-}
+.row::after {
+    content: none;
+    display: table;
+    clear: both;
+  }  
