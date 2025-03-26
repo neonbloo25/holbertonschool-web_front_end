@@ -223,7 +223,7 @@ ul.row {
   left: 0;
   background-color: var(--color-white); /* Background color set to color-white */
   width: 0; /* Width set to 0 */
-  height: 20%; /* Height set to 20% of root element */
+  height: 0.2rem; /* Height set to 20% of root element */
 }
 
 /* Before pseudo-elements for nav-link on hover inside nav */
