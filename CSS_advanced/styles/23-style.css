@@ -180,6 +180,6 @@ ul.row {
     fill: var(--text-color);
 }
 
-.social-link svg {
-    fill: var(--text-color);
+.social-link {
+    display: block;
 }
