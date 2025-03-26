@@ -69,16 +69,16 @@
   --section-tagline-margin: 0;
 
   /* Custom Properties for Header */
-  --header-padding: 4rem 0 0; /* Padding for header */
-  --header-logo-position: relative; /* Position of the header logo */
-  --header-logo-link-display: inline-block; /* Display for the logo link */
-  --header-logo-link-position: absolute; /* Positioning of the logo link */
-  --header-logo-link-top: -1rem; /* Vertical position of the logo */
-  --header-logo-link-left: 0; /* Horizontal position of the logo */
+  --header-padding: 4rem 0 0;
+  --header-logo-position: relative;
+  --header-logo-link-display: inline-block;
+  --header-logo-link-position: absolute;
+  --header-logo-link-top: -1rem;
+  --header-logo-link-left: 0;
 
   /* Transition Custom Properties */
   --transition-duration: 0.3s; /* Duration of the transition */
-  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01); /* Easing function */
+  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
 /* === Integrating Google Fonts === */
@@ -191,7 +191,7 @@ ul.row {
   --text-color: var(--color-white);
   --section-title-color: var(--color-white);
   background-color: var(--color-black);
-  --button-color: var(--color-white); /* Change button color to white in dark theme */
+  --button-color: var(--color-white);
 }
 
 /* === Footer Address Styling === */
@@ -218,27 +218,27 @@ ul.row {
 
 .card-work:hover .card-image {
   transform: scale(1.2); /* Scale up the image on hover */
-  transition: transform var(--transition-duration) var(--transition-cubic-bezier); /* Apply transition */
+  transition: transform var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-outer {
   transform: scale(0.95); /* Shrink card outer when hovered */
-  transition: transform var(--transition-duration) var(--transition-cubic-bezier); /* Apply transition */
+  transition: transform var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 /* Transitions for Navigation Items */
 .nav .nav-link::before {
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Apply transition for the pseudo-element */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 /* Transitions for Buttons */
 .button:hover {
-  transition-duration: var(--transition-duration); /* Set transition duration */
-  transition-property: color, background-color; /* Transition for color and background-color */
+  transition-duration: var(--transition-duration);
+  transition-property: color, background-color;
 }
 
 /* Transitions for Card Works on Hover */
 
 .card-work:hover .card-inner {
-  transition: all var(--transition-duration) var(--transition-cubic-bezier); /* Apply transition */
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
