@@ -156,3 +156,7 @@ ul.row {
 footer ul {
   text-align: right;
 }
+
+footer ul {
+    text-align: right; /* Align text to the right in all ul within footer */
+  }
