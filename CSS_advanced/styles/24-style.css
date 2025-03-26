@@ -198,7 +198,7 @@ ul.row {
 /* Target <a> inside card-services */
 .card-services a {
   display: block; /* Render as block-level element */
-  padding: calc(2 * 1rem); /* Padding set to 2x the root element */
+  padding: 2rem; /* Padding set to 2x the root element */
   background-color: var(--color-light-grey); /* Set background color */
 }
 
