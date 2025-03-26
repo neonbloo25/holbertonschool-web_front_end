@@ -49,9 +49,9 @@
   --nav-item-font-family: var(--font-family-title);
   --nav-item-font-weight: var(--font-weight-bold);
   --nav-item-font-size: var(--font-size-medium);
-  --nav-item-letter-spacing: 4%; /* 4% of root element */
+  --nav-item-letter-spacing: 0.04rem;
   --nav-item-display: inline-block;
-  --nav-item-margin: 3rem 0 0 0; /* 3 times root element on the bottom */
+  --nav-item-margin: 0 0 3rem 0;
   --nav-item-link-hover: var(--color-primary);
 }
 
@@ -60,30 +60,30 @@
 
 /* === Section Padding === */
 .section {
-  padding: var(--section-padding); /* Apply general padding to all sections */
+  padding: var(--section-padding);
 }
 
 .section-header {
-  padding: var(--section-header-padding); /* Padding for section header */
+  padding: var(--section-header-padding);
 }
 
 .section-body {
-  padding: var(--section-body-padding); /* Padding for section body */
+  padding: var(--section-body-padding);
 }
 
 .section-footer {
-  padding: var(--section-footer-padding); /* Padding for section footer */
-  text-align: var(--section-footer-align); /* Align footer content */
+  padding: var(--section-footer-padding);
+  text-align: var(--section-footer-align);
 }
 
 /* === Footer Class Specific Padding === */
 .footer {
-  padding: var(--footer-padding); /* Padding for footer class */
+  padding: var(--footer-padding);
 }
 
 /* === Navbar Customization === */
 .navbar-menu {
-  float: right; /* Float the navbar menu to the right */
+  float: right;
 }
 
 .nav {
@@ -94,24 +94,24 @@
 }
 
 .nav ul {
-  list-style: none; /* Remove any list styling */
-  text-align: center; /* Center align the text */
+  list-style: none;
+  text-align: center;
 }
 
 .nav .nav-item {
-  font-family: var(--nav-item-font-family); /* Apply custom font family */
-  font-weight: var(--nav-item-font-weight); /* Apply custom font weight */
-  font-size: var(--nav-item-font-size); /* Apply custom font size */
-  letter-spacing: var(--nav-item-letter-spacing); /* Apply custom letter-spacing */
-  display: var(--nav-item-display); /* Set display to inline-block */
-  margin: var(--nav-item-margin); /* Set margin around nav-item */
+  font-family: var(--nav-item-font-family);
+  font-weight: var(--nav-item-font-weight);
+  font-size: var(--nav-item-font-size);
+  letter-spacing: var(--nav-item-letter-spacing);
+  display: var(--nav-item-display);
+  margin: var(--nav-item-margin);
 }
 
 .nav .nav-link {
-  display: block; /* Make the nav link a block element */
-  padding: 0.5rem 1rem; /* Half of the root element font size */
+  display: block;
+  padding: 0.5rem 1rem;
 }
 
 .nav .nav-link:hover {
-  color: var(--nav-item-link-hover); /* Change foreground color to primary on hover */
+  color: var(--nav-item-link-hover);
 }
