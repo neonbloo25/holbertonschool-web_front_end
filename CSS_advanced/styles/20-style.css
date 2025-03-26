@@ -1,0 +1,164 @@
+/* === Universal Box Sizing === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* === Normalize CSS === */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/* === Custom Properties === */
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+  
+  /* Font Family Variables */
+  --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+  /* Font Size Variables */
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 4.8rem;
+
+  /* Font Weight Variables */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  
+  /* Line Height Variables */
+  --line-height-small: 1.2;
+  --line-height-base: 1.5;
+  --line-height-big: 1.8;
+
+  /* Padding Properties */
+  --section-padding: 5rem 0;
+  --section-header-padding: 0 0 3rem;
+  --section-body-padding: 0 0 3rem;
+  --section-footer-padding: 3rem 0 0;
+  --section-footer-align: center;
+  --footer-padding: 5rem 0 1rem;
+
+  /* Navbar Custom Properties */
+  --nav-item-font-family: var(--font-family-title);
+  --nav-item-font-weight: var(--font-weight-bold);
+  --nav-item-font-size: var(--font-size-medium);
+  --nav-item-letter-spacing: 0.04rem;
+  --nav-item-display: inline-block;
+  --nav-item-margin: 0 0 3rem 0;
+  --nav-item-link-hover: var(--color-primary);
+
+  /* Custom Properties for 19-style */
+  --section-tagline-margin: 0;
+}
+
+/* === Integrating Google Fonts === */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/* === Section Padding === */
+.section {
+  padding: var(--section-padding);
+}
+
+.section-header {
+  padding: var(--section-header-padding);
+}
+
+.section-body {
+  padding: var(--section-body-padding);
+}
+
+.section-footer {
+  padding: var(--section-footer-padding);
+  text-align: var(--section-footer-align);
+}
+
+/* === Footer Class Specific Padding === */
+.footer {
+  padding: var(--footer-padding);
+}
+
+/* === Navbar Customization === */
+.navbar-menu {
+  float: right;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+.nav .nav-item {
+  font-family: var(--nav-item-font-family);
+  font-weight: var(--nav-item-font-weight);
+  font-size: var(--nav-item-font-size);
+  letter-spacing: var(--nav-item-letter-spacing);
+  display: var(--nav-item-display);
+  margin: var(--nav-item-margin);
+}
+
+.nav .nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.nav .nav-link:hover {
+  color: var(--nav-item-link-hover);
+}
+
+/* === Section Tagline Margin === */
+.section-tagline {
+  margin: var(--section-tagline-margin);
+}
+
+/* === Row Styling === */
+ul.row {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* === Column Classes === */
+.col-1-3 {
+  width: 33.33%;
+  float: left;
+  padding: 0.5rem;
+}
+
+.col-1-2 {
+  width: 50%;
+  float: left;
+  padding: 0.5rem;
+}
+
+/* === Footer Copyright Styling === */
+.footer-copyright {
+  margin: 0;
+  font-size: var(--font-size-small);
+  color: var(--text-color);
+}
+
+/* === Footer List Alignment === */
+.footer ul {
+  text-align: right; /* Align text to the right in all ul within footer */
+}
+
+/* === Clear Context of the Grid === */
+.row + .row {
+  content: "";
+  display: table;
+  clear: both;
+}
