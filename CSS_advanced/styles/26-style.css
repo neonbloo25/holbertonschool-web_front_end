@@ -211,7 +211,7 @@ ul.row {
 .card-testimonial .card-avatar {
   border-radius: 50%; /* Round all sides to 50% */
   width: 10rem; /* Set width to 10x the root element */
-  height: calc(10 * 1rem); /* Set height to 10x the root element */
+  height: 10rem; /* Set height to 10x the root element */
 }
 
 /* Style <cite> tag inside card-quote in card-testimonial */
