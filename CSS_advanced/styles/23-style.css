@@ -153,7 +153,7 @@ ul.row {
 
 /* === Footer List Alignment === */
 .footer ul {
-  text-align: right; /* Align text to the right in all ul within footer */
+  text-align: right;
 }
 
 /* === Clear Context of the Grid === */
@@ -165,21 +165,20 @@ ul.row {
 
 /* === Dark Theme Styling for Sections === */
 [data-section-theme="dark"] {
-  --text-color: var(--color-white);         /* Set text color to white */
-  --section-title-color: var(--color-white); /* Set section title color to white */
-  background-color: var(--color-black);     /* Set background color to black */
+  --text-color: var(--color-white);
+  --section-title-color: var(--color-white);
+  background-color: var(--color-black);
 }
 
 /* === Footer Address Styling === */
 .footer-address {
-  color: var(--text-color); /* Set text color for footer address */
+  color: var(--text-color);
 }
 
 /* === Social Link Styling === */
-.social-link {
-  display: block; /* Make social link a block-level element */
+.social-link svg {
+    fill: var(--text-color);
 }
 
 .social-link svg {
-  fill: var(--text-color); /* Set SVG fill color to text color */
-}
+    fill: var(--text-color);
